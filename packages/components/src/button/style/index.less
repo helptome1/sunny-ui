@@ -18,6 +18,7 @@
   border-radius: 4px;
 }
 
+// primary
 .sun-button.sun-button--primary {
   color: #fff;
   background-color: #409eff;
@@ -27,5 +28,43 @@
     background: #66b1ff;
     border-color: #66b1ff;
     color: #fff;
+  }
+}
+
+// warning
+.sun-button.sun-button--warning {
+  color: #ff4d4f;
+  background-color: #fff;
+  border-color: #ff4d4f;
+
+  &:hover {
+    background: #fff;
+    border-color: #ff7875;
+    color: #ff7875;
+  }
+}
+
+// dashed
+.sun-button.sun-button--dashed {
+  color: #333;
+  background-color: #fff;
+  border: 1px dashed #dcdfe6;
+
+  &:hover {
+    background: #fff;
+    border-color: #66b1ff;
+    color: #66b1ff;
+  }
+}
+
+// text
+.sun-button.sun-button--text {
+  color: #333;
+  background-color: #fff;
+  border: 0;
+  transition: background-color 0.5s;
+  &:hover {
+    background: #f7f7f7;
+    border-color: #409eff;
   }
 }
