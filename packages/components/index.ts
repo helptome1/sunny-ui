@@ -8,7 +8,6 @@ export default {
   install: (app: App) => {
     // 遍历注册全局组件
     for (let c in components) {
-      console.log('install', components);
       app.use(components[c])
     }
   }

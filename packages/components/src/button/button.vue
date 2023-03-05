@@ -14,7 +14,6 @@ type ButtonProps = {
 };
 
 const buttonProps = defineProps<ButtonProps>()
-console.log(buttonProps);
 
 const buttonStyle = computed(() => {
   return {
