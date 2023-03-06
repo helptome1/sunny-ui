@@ -6,7 +6,7 @@ import autoprefixer from 'gulp-autoprefixer'
 import run from '../utils/run'
 //删除easyest
 export const removeDist = () => {
-  return delPath(`${pkgPath}/sunny`)
+  return delPath(`${pkgPath}/sunny-ui`)
 }
 
 //打包样式
@@ -14,8 +14,8 @@ export const buildStyle = () => {
   return src(`${componentPath}/src/**/style/**.less`)
     .pipe(less())
     .pipe(autoprefixer())
-    .pipe(dest(`${pkgPath}/sunny/lib/src`))
-    .pipe(dest(`${pkgPath}/sunny/es/src`))
+    .pipe(dest(`${pkgPath}/sunny-ui/lib/src`))
+    .pipe(dest(`${pkgPath}/sunny-ui/es/src`))
 }
 
 //打包组件
