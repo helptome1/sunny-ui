@@ -1,5 +1,5 @@
 <template>
-  <!-- <sun-button>全局引入</sun-button> -->
+  <sun-button type="primary">全局引入</sun-button>
   <Button type="dashed">Dashed Button</Button>
   <Button type="text">Text Button</Button>
 </template>

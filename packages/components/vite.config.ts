@@ -10,10 +10,11 @@ export default defineConfig({
     // minify: false,
     rollupOptions: {
       //忽略打包vue文件
-      external: ['vue', /\.less/],
+      external: ['vue', /\.less/, '@sunny/utils'],
       input: ['index.ts'],
       output: [
         {
+          //打包格式
           format: 'es',
           //打包后文件名
           entryFileNames: '[name].mjs',
@@ -24,7 +25,7 @@ export default defineConfig({
           dir: '../sunny-ui/es'
         },
         {
-          // 打包格式
+          //打包格式
           format: 'cjs',
           //打包后文件名
           entryFileNames: '[name].js',
@@ -32,23 +33,24 @@ export default defineConfig({
           preserveModules: true,
           exports: 'named',
           //配置打包根目录
-          dir: '../sunny-ui/es'
+          dir: '../sunny-ui/lib'
         }
       ]
     },
     lib: {
-      entry: './index.ts'
+      entry: './index.ts',
+      name: 'sunny-ui',
     }
   },
   plugins: [
     vue(),
+    DefineOptions(),
     dts({
       entryRoot: './src',
       outputDir: ['../sunny-ui/es/src', '../sunny-ui/lib/src'],
       //指定使用的tsconfig.json为我们整个项目根目录下,如果不配置,你也可以在components下新建tsconfig.json
       tsConfigFilePath: '../../tsconfig.json'
     }),
-    DefineOptions(),
     {
       name: 'style',
       generateBundle(config, bundle) {
