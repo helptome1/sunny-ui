@@ -2,3 +2,5 @@ node_modules
 sunny-ui
 sunny
 *.yaml
+es
+lib

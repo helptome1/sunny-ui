@@ -5,7 +5,7 @@ import DefineOptions from 'unplugin-vue-define-options/vite'
 export default defineConfig({
   build: {
     // 打包后文件目录
-    outDir: 'sunny',
+    // outDir: 'sunny',
     // 压缩
     // minify: false,
     rollupOptions: {

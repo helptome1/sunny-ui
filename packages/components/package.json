@@ -11,6 +11,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@sunny/utils": "workspace:^1.0.0"
+    "@sunny/utils": "workspace:^1.0.2"
   }
 }
