@@ -47,10 +47,7 @@ importers:
       '@sunny/utils': link:../utils
 
   packages/sunny-ui:
-    specifiers:
-      '@sunny/utils': workspace:^1.0.2
-    dependencies:
-      '@sunny/utils': link:../utils
+    specifiers: {}
 
   play:
     specifiers:

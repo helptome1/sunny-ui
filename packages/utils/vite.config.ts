@@ -6,7 +6,8 @@ export default defineConfig({
     //压缩
     minify: false,
     rollupOptions: {
-      input: ['index.ts'],
+      input: ['./index.ts'],
+      // external: [/publish/],
       output: [
         {
           format: 'es',

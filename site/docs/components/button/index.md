@@ -1,3 +1,3 @@
 ## Button 组件
 
-<Sun-Button type="primary">全局引入</Sun-Button>
+<sun-button type="primary">全局引入222</sun-button>
