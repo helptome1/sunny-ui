@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
+// 用来生成.d.ts文件，支持打包后的组件库在ts项目中使用
 import dts from 'vite-plugin-dts'
 import DefineOptions from 'unplugin-vue-define-options/vite'
 export default defineConfig({
