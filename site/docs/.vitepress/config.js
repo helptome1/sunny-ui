@@ -43,7 +43,22 @@ export default {
             }
           ]
         }
+      ],
+      '/components/': [
+        {
+          text: '基础组件',
+          items: [
+            {
+              text: 'Button',
+              link: '/components/button/index'
+            },
+            {
+              text: 'Icon',
+              link: '/components/icon/index'
+            }
+          ]
+        }
       ]
-    },
+    }
   }
 }
