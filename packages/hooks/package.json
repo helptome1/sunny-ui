@@ -1,0 +1,9 @@
+{
+  "name": "@sunny/hooks",
+  "version": "1.0.5",
+  "description": "sunnyui composables",
+  "main": "index.ts",
+  "keywords": [],
+  "author": "hezg",
+  "license": "ISC"
+}

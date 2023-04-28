@@ -6,8 +6,10 @@ import * as components from './src/index'
 import { App } from 'vue'
 export default {
   install: (app: App) => {
+    console.log("components", components)
     // 遍历注册全局组件
     for (let c in components) {
+      // @ts-ignore
       app.use(components[c])
     }
   }

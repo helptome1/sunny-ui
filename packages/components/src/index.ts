@@ -1,2 +1,3 @@
-// export button components
 export * from './button'
+export * from './icon'
+export * from './slider'

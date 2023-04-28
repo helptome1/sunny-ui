@@ -99,6 +99,6 @@
     /* Completeness */
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
     "skipLibCheck": true,                                 /* Skip type checking all .d.ts files. */
-    "suppressImplicitAnyIndexErrors": true,              /* Suppress noImplicitAny errors for indexing objects lacking index signatures. */
+    // "suppressImplicitAnyIndexErrors": true,              /* Suppress noImplicitAny errors for indexing objects lacking index signatures. */
   }
 }

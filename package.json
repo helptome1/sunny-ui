@@ -29,5 +29,10 @@
     "vite": "^4.1.4",
     "vite-plugin-dts": "1.4.1",
     "vue": "^3.2.36"
+  },
+  "dependencies": {
+    "@sunny/components": "workspace:^",
+    "@sunny/hooks": "workspace:^",
+    "@sunny/utils": "workspace:^"
   }
 }
