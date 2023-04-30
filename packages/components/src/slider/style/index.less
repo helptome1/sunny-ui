@@ -1,12 +1,27 @@
+@import '../../../styles/common.less';
 .sun-slider {
+  position: relative;
   height: 8px;
   border-radius: 4px;
-  background-color: rgba(0, 0, 0, 0.1);
-  .slider-bar {
+  background-color: var(--hover-background-color);
+  .slider-dot {
+    position: absolute;
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background-color: rgba(255, 255, 255) ;
-    border: 1px solid ;
+    margin-top: -3px;
+    margin-left: -6px;
+    z-index: 2;
+    background-color: rgba(var(--white));
+    border: 2px solid rgb(var(--primary));
+    &:hover {
+      transform: scale(1.5);
+    }
+  }
+  .slider-bar {
+    position: absolute;
+    height: 8px;
+    border-radius: 4px;
+    background-color: rgb(var(--primary));
   }
 }

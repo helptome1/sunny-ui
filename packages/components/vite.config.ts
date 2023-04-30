@@ -41,7 +41,7 @@ export default defineConfig({
     },
     lib: {
       entry: './index.ts',
-      name: 'sunny-ui',
+      name: 'sunny-ui'
     }
   },
   plugins: [
