@@ -9,19 +9,25 @@
     <sun-slider></sun-slider>
   </div>
   <!-- <sun-message></sun-message> -->
-  <Message type="message"></Message>
-  <!-- <Message type="success"></Message>
-  <Message type="danger"></Message> -->
+  <!-- <MessageCom type="message" :text="message"></MessageCom> -->
+  <button @click="showMessage">message button</button>
 </template>
 
 <script setup lang="ts">
-  import { Button, Slider, Message } from '@sunny/components'
+  import { Button, Slider, Message } from '@sunny/components';
+
+  const message = '我是一个提示';
+
+  const showMessage = () => {
+    console.log("message")
+    Message({type: 'success', text: 'demo'})
+  };
 </script>
 
-<style scoped lang="less"> 
-.slider{
-  position: relative;
-  width: 600px;
-  left: 200px;
-}
+<style scoped lang="less">
+  .slider {
+    position: relative;
+    width: 600px;
+    left: 200px;
+  }
 </style>

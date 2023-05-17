@@ -1,13 +1,15 @@
+import { PropType } from 'vue';
 export type MessageType = 'success' | 'warning' | 'danger' | 'message';
 
 export interface MessageProps {
   type: MessageType;
   text: String;
+  offset: Number;
 }
 
 export const messageProps = {
   type: {
-    // type: String,
+    type: String as PropType<MessageType>,
     default: 'message',
     validator(value: MessageType) {
       // The value must match one of these strings
@@ -17,6 +19,10 @@ export const messageProps = {
   text: {
     type: String,
     default: ''
+  },
+  offset: {
+    type: Number,
+    default: 20
   }
 };
 
@@ -47,3 +53,5 @@ export const styleList = {
     borderColor: 'rgb(228, 228, 228)'
   }
 };
+
+export type IMessageParams = MessageProps | string;
