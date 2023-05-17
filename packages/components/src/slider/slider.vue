@@ -24,7 +24,6 @@
 
   const handleMoveDown = (e: MouseEvent) => {
     touchX.value = e.x + 3
-    console.log('touch', e)
     on(document, 'mousemove', handleMouseMove)
     on(document, 'mouseup', () => {
       off(document, 'mousemove', handleMouseMove)
@@ -52,7 +51,6 @@
 
   const useSpace = () => {
     const el = instance?.vnode.el as HTMLElement
-    console.log("el", el.getBoundingClientRect())
     const ciletRect = el.getBoundingClientRect()
     const clientWidth = ciletRect.width
     startX.value = ciletRect.x;

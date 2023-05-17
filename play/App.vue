@@ -8,11 +8,14 @@
   <div class="slider">
     <sun-slider></sun-slider>
   </div>
-  <!-- <Slider></Slider> -->
+  <!-- <sun-message></sun-message> -->
+  <Message type="message"></Message>
+  <!-- <Message type="success"></Message>
+  <Message type="danger"></Message> -->
 </template>
 
 <script setup lang="ts">
-  import { Button, Slider } from '@sunny/components'
+  import { Button, Slider, Message } from '@sunny/components'
 </script>
 
 <style scoped lang="less"> 

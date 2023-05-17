@@ -31,6 +31,7 @@
     "vue": "^3.2.36"
   },
   "dependencies": {
+    "@element-plus/icons-vue": "^2.1.0",
     "@sunny/components": "workspace:^",
     "@sunny/hooks": "workspace:^",
     "@sunny/utils": "workspace:^"
