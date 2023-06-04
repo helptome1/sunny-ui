@@ -38,7 +38,6 @@
         progress.width = num + '%'
         dotX.value = num
       }
-
     }
   }
 

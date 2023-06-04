@@ -108,6 +108,9 @@ importers:
       vite:
         specifier: ^4.1.4
         version: 4.1.4(@types/node@18.14.6)(less@4.1.3)
+      vue-kinesis:
+        specifier: ^2.0.5
+        version: 2.0.5(vue@3.2.47)
 
   site:
     dependencies:
@@ -6640,6 +6643,15 @@ packages:
     peerDependenciesMeta:
       '@vue/composition-api':
         optional: true
+    dependencies:
+      vue: 3.2.47
+    dev: true
+
+  /vue-kinesis@2.0.5(vue@3.2.47):
+    resolution: {integrity: sha512-uO2lG9A/L4I9KvyJuUzAkAWqd37In/kWxQ6rZ3/heJZ8+7rHAbBO5Knz6xG+cpO+9Q4cYurxXsPfWM6e7X9E3Q==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      vue: ^3.0.0
     dependencies:
       vue: 3.2.47
     dev: true
