@@ -11,14 +11,15 @@
   <!-- <sun-message></sun-message> -->
   <!-- <MessageCom type="message" :text="message"></MessageCom> -->
   <button @click="showMessage">message button</button>
-  <Kinesis></Kinesis>
+  <!-- <Kinesis></Kinesis> -->
+  <!-- number滚动流 -->
+  <sun-number :number="5 "></sun-number>
+  <Number :number="4"></Number>
 </template>
 
 <script setup lang="ts">
-  import Kinesis from './Kinesis.vue'
-  import { Button, Slider, Message } from '@sunny/components'
-
-  const message = '我是一个提示'
+  // import Kinesis from './Kinesis.vue'
+  import { Button, Number, Message } from '@sunny/components'
 
   const showMessage = () => {
     console.log('message')

@@ -21,11 +21,34 @@
         <div class="kinesis-body">content!</div>
       </kinesis-element> -->
     </kinesis-container>
+    <div class="show-text">
+      <span ref="showText"></span>
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
+  import { ref } from 'vue'
   import { KinesisContainer, KinesisElement } from 'vue-kinesis'
+
+  const showText = ref()
+  console.log(showText)
+  let textContent = `what ever you want. you will see the effect when you scroll the page. 
+  And you can change the strength of the effect by changing the strength prop of the kinesis-element.
+  You can also change the type of the effect by changing the type prop of the kinesis-element.
+  But you should know that the type prop only accept two values: depth and depth_inv.
+  What is depth and depth_inv? You can see the effect when you scroll the page.
+  And you can also change the perspective of the effect by changing the perspective prop of the kinesis-container.
+  To be honest, I don't know what is perspective. But you can see the effect when you scroll the page.
+  So, enjoy it!
+  `
+  function showTextContent() {
+    if (textContent.length > 0) {
+      showText.value.innerHTML += textContent.charAt(0)
+      textContent = textContent.substring(1)
+    }
+  }
+  setInterval(showTextContent, 16)
 </script>
 
 <style scoped lang="less">
@@ -47,6 +70,12 @@
           transform-origin: center center;
         }
       }
+    }
+    .show-text {
+      padding: 5px 10px;
+      border: 1px solid gray;
+      border-radius: 5px;
+      line-height: 30px;
     }
   }
 </style>
