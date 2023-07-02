@@ -55,6 +55,10 @@ export default {
             {
               text: 'Icon',
               link: '/components/icon/index'
+            },
+            {
+              text: 'Message',
+              link: '/components/message/index'
             }
           ]
         }
