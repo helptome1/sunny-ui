@@ -6,7 +6,7 @@ declare module '@vue/runtime-core' {
     SunSlider: typeof components.Slider;
     SunIcon: typeof components.Icon;
     SunNumber: typeof components.Number;
-    // SunMessage: typeof components.Message;
+    Select: typeof components.Select;
   }
 }
 export {}

@@ -7,19 +7,16 @@
   <!-- slider -->
   <div class="slider">
     <sun-slider></sun-slider>
+    <Slider></Slider>
   </div>
-  <!-- <sun-message></sun-message> -->
-  <!-- <MessageCom type="message" :text="message"></MessageCom> -->
+
   <button @click="showMessage">message button</button>
-  <!-- <Kinesis></Kinesis> -->
-  <!-- number滚动流 -->
-  <sun-number :number="5 "></sun-number>
-  <Number :number="4"></Number>
+  <Select size="large"></Select>
 </template>
 
 <script setup lang="ts">
   // import Kinesis from './Kinesis.vue'
-  import { Button, Number, Message } from '@sunny/components'
+  import { Button, Message, Slider, Select } from '@sunny/components'
 
   const showMessage = () => {
     console.log('message')
