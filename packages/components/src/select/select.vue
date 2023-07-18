@@ -9,7 +9,9 @@
       <input class="select-input_inner" type="text" readonly autocomplete="off" :tabindex="0" :placeholder="props.placeholder" />
     </div>
     <div class="sun-select-option-container">
-      <slot></slot>
+      <ul>
+        <slot></slot>
+      </ul>
     </div>
   </div>
 </template>
