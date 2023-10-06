@@ -34,6 +34,7 @@
     "@element-plus/icons-vue": "^2.1.0",
     "@sunny/components": "workspace:^",
     "@sunny/hooks": "workspace:^",
-    "@sunny/utils": "workspace:^"
+    "@sunny/utils": "workspace:*",
+    "@vue/shared": "^3.3.4"
   }
 }

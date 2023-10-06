@@ -13,5 +13,8 @@
   "scripts": {
     "build": "vite build",
     "release": "release-it"
+  },
+  "peerDependencies": {
+    "vue": "^3.2.36"
   }
 }

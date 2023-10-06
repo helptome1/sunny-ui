@@ -1,1 +1,1 @@
-export { default as withInstall } from './withinstall';
+export { withInstall } from './withinstall';

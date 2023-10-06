@@ -12,14 +12,15 @@
 
   <button @click="showMessage">message button</button>
   <Select size="large"></Select>
+  <Chart />
 </template>
 
 <script setup lang="ts">
   // import Kinesis from './Kinesis.vue'
+  import Chart from './echarts.vue'
   import { Button, Message, Slider, Select } from '@sunny/components'
 
   const showMessage = () => {
-    console.log('message')
     Message({ type: 'success', text: 'demo' })
   }
 </script>
